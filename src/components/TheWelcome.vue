@@ -21,9 +21,9 @@ import WelcomeItem from "./WelcomeItem.vue";
     <br />
     <ol>
       <li>
-        on the <abbr title="Component Repair Order">CRO</abbr> Repair Line
+        On the <abbr title="Component Repair Order">CRO</abbr> Repair Line
         Screen click the search button (F3) and enter the serial number of the
-        device, and search
+        device, and search.
       </li>
       <blockquote>
         This should
@@ -32,7 +32,7 @@ import WelcomeItem from "./WelcomeItem.vue";
         The Status should be <strong>planned</strong>.<br />
         You can ignore any lines with Status <strong>Completed </strong>or
         <strong>Cancelled</strong>, these have already been processed.<br />
-        Always Check the Error Description; DVR’s often need Footage Retrieval
+        Always Check the Error Description; DVR’s often need Footage Retrieval.
       </blockquote>
       <li>
         On the Line <abbr title="Right Mouse Button">RMB</abbr> and select
@@ -47,12 +47,12 @@ import WelcomeItem from "./WelcomeItem.vue";
       </li>
       <li>
         <abbr title="Right Mouse Button">RMB</abbr> the line and select
-        <strong
-          >Print <abbr title="Component Repair Order">CRO</abbr> Label</strong
-        >
+        <strong>
+          Print <abbr title="Component Repair Order">CRO</abbr> Label</strong
+        >.
       </li>
       <blockquote>
-        A quick report query box will pop up, press ok (Enter key)
+        A Quick Report query box will pop up, press ok (Enter key)
       </blockquote>
       <li>
         Press the printer button in the top right and print.
@@ -61,7 +61,8 @@ import WelcomeItem from "./WelcomeItem.vue";
       <blockquote>
         Double check the information on the ticket preview matches<br />
         If there is no shop order number then you have printed before receipting
-        in the unit
+        in the unit.<br />If the Printer settings are correct, then you can
+        double click the printer and it will print.
       </blockquote>
       <li>Finally stick the label to the correct unit.</li>
     </ol>
@@ -108,9 +109,9 @@ import WelcomeItem from "./WelcomeItem.vue";
     You will need to set the dimensions to <strong>101.6mm x 127.0mm</strong>.
     <blockquote>
       You cannot be permanently change which profile the printer defaults to, so
-      just change the dimensions of the default profile (USER) .<br />
+      just change the dimensions of the default profile (USER).<br />
       The Dimensions of the Default Profile (USER) might change if someone else
-      logs onto your computer
+      logs onto your computer.
     </blockquote>
     <div id="booking-in-errors"></div>
   </welcomeItem>
@@ -119,52 +120,42 @@ import WelcomeItem from "./WelcomeItem.vue";
     <h4 id="rma-team">
       <abbr title="Return Materials Authorization">RMA</abbr> Team
     </h4>
-    <p>
-      If a unit is not on a <abbr title="Component Repair Order">CRO</abbr> then
-      you need to Email the
-      <abbr title="Return Materials Authorization">RMA</abbr> Team with all the
-      info you have on the unit
-    </p>
+    If a unit is not on a <abbr title="Component Repair Order">CRO</abbr> then
+    you need to Email the
+    <abbr title="Return Materials Authorization">RMA</abbr> Team with all the
+    info you have on the unit.
     <blockquote>
-      <p>
-        Any paperwork the device has come with.<br />
-        are any units in the same box on a
-        <abbr title="Component Repair Order">CRO</abbr>?<br />
-        The info on the delivery note on the box.
-      </p>
+      The Serial number of the unit.<br />
+      Any paperwork the device has come with.<br />
+      are any units in the same box on a
+      <abbr title="Component Repair Order">CRO</abbr>?<br />
+      The info on the delivery note on the box.
     </blockquote>
     <hr />
     <h4 id="serial-number-is-already-in-use">
       Serial Number is already in use
     </h4>
-    <p>
-      <strong>Reason</strong><br />
-      The unit is showing on stock
-    </p>
-    <p>
-      <strong>Resolution</strong><br />
-      search in IPIS using the serial number that was presented in the error box
-      and <a href="#count">count</a> the device off.<br />
-      Then you can book the device in
-    </p>
+    <strong>Reason</strong><br />
+    The unit is showing on stock.<br />
+    <strong>Resolution</strong><br />
+    Search in <abbr title="Inventory Part in Stock">IPIS</abbr> using the serial
+    number that was presented in the error box and
+    <a href="#count">Count</a> the device off.<br />
+    Then you can book the device in.
     <hr />
     <h4 id="product-structure-header-does-not-exist-for-shop-order-part">
       Product Structure Header does not exist for shop order part
     </h4>
-    <p>
-      <strong>Reason</strong><br />
-      The unit does not have a repair structure type in Product Structure
-    </p>
-    <p>
-      <strong>Resolution</strong><br />
-      speak with line manager<br />
-      it might be “easier” to create a new serial object with a similar but
-      different Part No.<br />
-      The actual way is to raise a
-      <abbr title="Product Engineering">PE</abbr> request, truthfully this
-      should not take very long providing the part already has all the necessary
-      approvals.
-    </p>
+    <strong>Reason</strong><br />
+    The unit does not have a repair structure type in Product Structure.<br />
+    <strong>Resolution</strong><br />
+    Speak with line manager<br />
+    It might be “easier” to create a new serial object with a similar but fully
+    setup Part No.<br />
+    The actual way is to raise a
+    <abbr title="Product Engineering">PE</abbr> request, truthfully this should
+    not take very long providing the part already has all the necessary
+    approvals.
     <hr />
     <h4
       id="field-serial_no-is-mandatory-for-inventory-part-in-stock-and-requires-a-value"
@@ -172,57 +163,47 @@ import WelcomeItem from "./WelcomeItem.vue";
       Field [Serial_NO} is mandatory for inventory part in stock and requires a
       value
     </h4>
-    <p>
-      <strong>Reason</strong><br />
-      This Error is because the unit does not have a part no, or its
-      <strong>unknown</strong>
-    </p>
-    <p>
-      <strong>Resolution</strong><br />
-      check the device has a serial object / part serial
-      <a href="#search-via-psn"
-        >Search via <abbr title="Persistent Serial Number">PSN</abbr></a
-      >.<br />
-      If it does have a part serial then just re-add it to the
-      <abbr title="Component Repair Order">CRO</abbr>
-      <a href="#creating-&amp;-adding-to-a-cro"
-        >adding to a <abbr title="Component Repair Order">CRO</abbr></a
-      ><br />
-      If it does not then you will need to generate an object
-      <a href="#generating-objects">Generating Objects</a> first and then add
-      the unit to the <abbr title="Component Repair Order">CRO</abbr>
-      <a href="#creating-&amp;-adding-to-a-cro"
-        >adding to a <abbr title="Component Repair Order">CRO</abbr></a
-      >
-    </p>
+    <strong>Reason</strong><br />
+    This Error is because the unit does not have a part no, or its
+    <strong>unknown</strong>.<br />
+    <strong>Resolution</strong><br />
+    Check the device has a serial object / part serial.
+    <a href="#search-via-psn"
+      >(Search via <abbr title="Persistent Serial Number">PSN</abbr>)</a
+    ><br />
+    If it does have a part serial then just re-add it to the
+    <abbr title="Component Repair Order">CRO</abbr>.
+    <a href="#adding-to-a-cro"
+      >(Adding to a <abbr title="Component Repair Order">CRO</abbr>)</a
+    ><br />
+    If it does not then you will need to generate an object
+    <a href="#generating-objects">(Generating Objects)</a> and then add the unit
+    to the <abbr title="Component Repair Order">CRO</abbr>.
+    <a href="#adding-to-a-cro"
+      >(Adding to a <abbr title="Component Repair Order">CRO</abbr>)</a
+    >
     <hr />
     <h4 id="serial--already-exists-and-is-contained-in-parent....">
       Serial [] already exists and is contained in parent…
     </h4>
-    <p>
-      <strong>Reason</strong><br />
-      The unit has multiple serial objects and the
-      <abbr title="Component Repair Order">CRO</abbr> has picked the wrong part
-      serial.
-    </p>
-    <p>
-      <strong>Resolution</strong><br />
-      Using
-      <a href="#search-via-psn"
-        >Search via <abbr title="Persistent Serial Number">PSN</abbr></a
-      >
-      get all the serial numbers for the device and open all of the part
-      serials. one (typically the one using the Serial number of the device) of
-      the part serials will have its current position as:
-      <strong>Contained</strong>. Open the attachments tab and in the technical
-      class in characteristics remove the
-      <abbr title="Persistent Serial Number">PSN</abbr> (Persistent Serial
-      Number). Then re-add the device to the
-      <abbr title="Component Repair Order">CRO</abbr>
-      <a href="#creating-&amp;-adding-to-a-cro"
-        >Adding to a <abbr title="Component Repair Order">CRO</abbr></a
-      >.
-    </p>
+    <strong>Reason</strong><br />
+    The unit has multiple serial objects and the
+    <abbr title="Component Repair Order">CRO</abbr> has picked the wrong part
+    serial.<br /><strong>Resolution</strong><br />
+    Using
+    <a href="#search-via-psn"
+      >(Search via <abbr title="Persistent Serial Number">PSN</abbr>)</a
+    >
+    get all the serial numbers for the device and open all of the part serials.
+    one (typically the one using the Serial number of the device) of the part
+    serials will have its Current Position as:
+    <strong>Contained</strong>. Open the attachments tab, then select
+    characteristics, in the technical class remove the
+    <abbr title="Persistent Serial Number">PSN</abbr>. Then re-add the device to
+    the <abbr title="Component Repair Order">CRO</abbr>.
+    <a href="#creating-&amp;-adding-to-a-cro"
+      >(Adding to a <abbr title="Component Repair Order">CRO</abbr>)</a
+    >
     <hr />
     <h4
       id="the-ownership-should-be-customer-owned-to-receive-parts-directly-to-the-cro-repair-line"
@@ -230,18 +211,13 @@ import WelcomeItem from "./WelcomeItem.vue";
       The ownership should be Customer-Owned to receive parts directly to the
       <abbr title="Component Repair Order">CRO</abbr> repair line
     </h4>
-    <p>
-      <strong>Reason</strong><br />
-      on the line the ownership of the unit is set to Company owned. the
-      <abbr title="Component Repair Order">CRO</abbr> has been set up
-      incorrectly.
-    </p>
-    <p>
-      <strong>Resolution</strong><br />
-      Contact the <abbr title="Return Materials Authorization">RMA</abbr> team.
-      To change them on the unit line select the box where it says company owned
-      and change it to customer owned.
-    </p>
+    <strong>Reason</strong><br />
+    on the line the ownership of the unit is set to Company owned. the
+    <abbr title="Component Repair Order">CRO</abbr> has been set up incorrectly.
+    <strong>Resolution</strong><br />
+    Contact the <abbr title="Return Materials Authorization">RMA</abbr> team. To
+    change them on the unit line select the box where it says company owned and
+    change it to customer owned.
     <div id="shipments"></div>
   </welcomeItem>
   <welcomeItem>
@@ -252,11 +228,10 @@ import WelcomeItem from "./WelcomeItem.vue";
       <li>
         Take the unit from the pre-shipments trolley. On the job conclusion
         sheet take the <abbr title="Component Repair Order">CRO</abbr> number
-        and search using it, in the Component Repair Screen. Check the Serial
-        number is on the <abbr title="Component Repair Order">CRO</abbr> and the
-        Status is <strong>Completed</strong>. (<a href="#job-incomplete"
-          >If Not</a
-        >)
+        and search using it, in the Component Repair Order Screen. Check the
+        Serial number is on the
+        <abbr title="Component Repair Order">CRO</abbr> and the Status is
+        <strong>Completed</strong>. (<a href="#job-incomplete">If Not</a>)
       </li>
       <br />
       <li>
