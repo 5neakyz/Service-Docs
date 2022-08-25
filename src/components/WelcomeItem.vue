@@ -1,15 +1,22 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
+  <div class="details">
+    <h1>
+      <slot name="heading1"></slot>
+    </h1>
+    <h2>
+      <slot name="heading2"></slot>
+    </h2>
+    <h3>
+      <slot name="heading3"></slot>
+    </h3>
+    <h4>
+      <slot name="heading4"></slot>
+    </h4>
+    <slot></slot>
   </div>
+  <br />
+  <hr />
+  <br />
 </template>
 
 <style scoped>
@@ -31,13 +38,6 @@ i {
   height: 32px;
 
   color: var(--color-text);
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {

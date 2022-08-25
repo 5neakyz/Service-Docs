@@ -1,13 +1,61 @@
 @import "./base.css";
 
-#app {
-  max-width: 1280px;
+.TheWelcome {
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
 
+  font-size: 1.4rem;
   font-weight: normal;
 }
 
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading-mute);
+}
+blockquote {
+  border-left: 0.2rem solid hsla(160, 100%, 37%, 1);
+  margin: 1.5rem 1.2rem;
+  padding: 0.5rem 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+p {
+  margin: 0rem 0rem;
+}
+pre code {
+  background-color: #1c1c1c;
+  border: 1px solid #444444;
+  display: block;
+  padding: 1rem;
+  margin: 2rem 2rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-family: system-ui;
+}
 a,
 .green {
   text-decoration: none;
@@ -23,13 +71,5 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
