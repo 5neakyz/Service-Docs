@@ -55,7 +55,7 @@ import WelcomeItem from "./WelcomeItem.vue";
         A Quick Report query box will pop up, press ok (Enter key)
       </blockquote>
       <li>
-        Press the printer button in the top right and print.
+        Press the printer button in the top left and print.
         <a href="#printer-settings">Printer Settings</a>
       </li>
       <blockquote>
