@@ -27,6 +27,7 @@
 <style scoped>
 ul {
   list-style-type: none;
+  font-size: 1rem;
 }
 li {
   list-style-type: none;
