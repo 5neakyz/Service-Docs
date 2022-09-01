@@ -304,7 +304,7 @@ import WelcomeItem from "./WelcomeItem.vue";
       </blockquote>
       <li>
         <p>
-          Find the devices or devices. Ensure that status of the unit is
+          Find the device or devices. Ensure that status of the unit is
           <strong>reserved</strong> and tick the
           <strong>Connect to shipments</strong> box for all the devices you have
           and Save.
