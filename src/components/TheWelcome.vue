@@ -397,7 +397,7 @@ import WelcomeItem from "./WelcomeItem.vue";
           select <strong>Manual reservations</strong>. In the header of the
           Manual Reservations Screen
           <abbr title="Right Mouse Button">RMB</abbr>, if the top option is
-          <strong>Report Received Quantities as Picked</strong> the select it
+          <strong>Report Received Quantities as Picked</strong> then select it
           and click ok to all the dialog boxes. You Must Repeat this for all
           units on the shipment. If you do not have this option, then see Step
           11.
